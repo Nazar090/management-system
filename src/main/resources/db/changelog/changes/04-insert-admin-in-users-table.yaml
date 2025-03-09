@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-users
+      author: nazar
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: email
+                  value: "admin@gmail.com"
+              - column:
+                  name: nickname
+                  value: "admin"
+              - column:
+                  name: password
+                  value: "$2a$10$mvHBSKYI0CrvMxkxZHwlZ.XthjQgWb1zHyw3XULTSGEEoIJZyJ6Au"
+              - column:
+                  name: name
+                  value: "Admin Iverson"
