@@ -7,8 +7,10 @@ import com.example.managementsystem.dto.user.profile.UserDto;
 import com.example.managementsystem.dto.user.profile.UserRequestDto;
 import com.example.managementsystem.dto.user.profile.UserRoleRequestDto;
 import com.example.managementsystem.model.User;
+import org.mapstruct.BeanMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
+import org.mapstruct.NullValuePropertyMappingStrategy;
 
 @Mapper(config = MapperConfig.class)
 public interface UserMapper {
@@ -18,6 +20,7 @@ public interface UserMapper {
 
     User toUserEntityFromRegistration(UserRegistrationRequestDto requestDto);
 
+    @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
     void updateUserInfo(UserRequestDto requestDto, @MappingTarget User user);
 
     void updateUserInfo(UserRoleRequestDto requestDto, @MappingTarget User user);
