@@ -1,0 +1,68 @@
+/* src/pages/HomePage.css */
+
+/* Make the page fill enough vertical space to show the scrollbar */
+html {
+    scroll-behavior: smooth; /* optional: smooth scrolling on anchor links */
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container styling */
+  .home-container {
+    /* Force some vertical space so you can see the scrollbar */
+    min-height: 150vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+  }
+  
+  /* Title and message */
+  .home-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .home-message {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+
+  /* Optional extra spacing for the filler text */
+  .filler {
+    max-width: 600px;
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  /* -------------------------------
+     Custom Scrollbar (WebKit only)
+     ------------------------------- */
+  ::-webkit-scrollbar {
+    width: 10px;               /* scrollbar width */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f8f8f8;       /* track color */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;    /* thumb color */
+    border-radius: 5px;
+    border: 2px solid #f8f8f8; /* space around thumb */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;    /* hover color */
+  }
+  

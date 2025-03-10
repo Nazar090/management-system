@@ -82,7 +82,7 @@ public class SecurityConfig {
                     .successHandler((request, response,
                                      authentication) -> {
                         // E.g., redirect somewhere, or write a token to the response, etc.
-                        response.sendRedirect("/api/home");
+                        response.sendRedirect("http://localhost:3000/profile");
                     })
             )
             .logout(logout -> logout

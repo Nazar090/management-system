@@ -1,0 +1,96 @@
+/* src/pages/LoginPage.css */
+
+/* Page container */
+.login-page {
+    min-height: 120vh;      /* Enough height to demonstrate scrolling */
+    background: #f0f0f0;    /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 2rem;
+    font-family: sans-serif;
+    overflow-y: scroll;     /* Enable vertical scrolling */
+  }
+  
+  /* Login box container */
+  .login-box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 300px;
+  }
+  
+  /* Title */
+  .login-title {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Form fields */
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Buttons */
+  .btn {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .btn-login {
+    background-color: #4b0082; /* Purple */
+    color: #fff;
+  }
+  
+  .btn-login:hover {
+    background-color: #370061;
+  }
+  
+  .btn-google {
+    background-color: #db4437; /* Google Red */
+    color: #fff;
+  }
+  
+  .btn-google:hover {
+    background-color: #c23325;
+  }
+  
+  /* Custom Scrollbar (WebKit) */
+  .login-page::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .login-page::-webkit-scrollbar-track {
+    background: #f0f0f0;
+  }
+  
+  .login-page::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 5px;
+    border: 2px solid #f0f0f0;
+  }
+  
+  .login-page::-webkit-scrollbar-thumb:hover {
+    background-color: #666;
+  }
+  

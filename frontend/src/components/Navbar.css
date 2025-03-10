@@ -1,0 +1,41 @@
+  /* Navbar.css */
+
+/* Container for the entire navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;       /* space between links */
+    padding: 1rem;
+    background-color: #f8f8f8; /* light background */
+  }
+  
+  /* Style for each link to look like a button */
+  .nav-link {
+    color: #4b0082;          /* a nice purple text */
+    text-decoration: none;   /* remove underline */
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid #4b0082;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .nav-link:hover {
+    background-color: #4b0082;
+    color: #fff;             /* white text on hover */
+    text-decoration: none;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* Push left and right groups apart */
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .left-links, .right-links {
+    display: flex;
+    gap: 1rem;  /* space between links */
+  }
+  
