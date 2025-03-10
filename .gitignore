@@ -1,10 +1,15 @@
-HELP.md
+# ----------------------------
+#  Java / Maven / Spring Boot
+# ----------------------------
+HELP.md               # If you do NOT want to track HELP.md, leave this line. Otherwise remove it.
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### STS ###
+# ----------------------------
+#  Spring Tool Suite (STS)
+# ----------------------------
 .apt_generated
 .classpath
 .factorypath
@@ -13,13 +18,17 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
+# ----------------------------
+#  IntelliJ IDEA
+# ----------------------------
 .idea
 *.iws
 *.iml
 *.ipr
 
-### NetBeans ###
+# ----------------------------
+#  NetBeans
+# ----------------------------
 /nbproject/private/
 /nbbuild/
 /dist/
@@ -29,5 +38,40 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### VS Code ###
+# ----------------------------
+#  Visual Studio Code
+# ----------------------------
 .vscode/
+
+# ----------------------------
+#  Node.js / React
+# ----------------------------
+/node_modules
+/.pnp
+.pnp.js
+
+# Testing coverage
+/coverage
+
+# Production build output
+/build
+
+# ----------------------------
+#  OS / Misc
+# ----------------------------
+.DS_Store
+
+# ----------------------------
+#  Environment Files
+# ----------------------------
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ----------------------------
+#  Logs
+# ----------------------------
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
